@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alpine</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="../css/hero.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/section.css" />
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
   </head>
   <body class="container">
@@ -16,16 +24,17 @@
       </div>
       <div class="header-title">Alpine</div>
       <nav class="nav-bar">
-        <ul class="navList">
+        <div class="navList">
           <div class="innerSection">
-            <li>Cart</li>
-            <li>
-              <img src="../assets/cart.png" alt="Cart" />
-            </li>
-          </div>
+            <div class="cart-icons">
+              <span><a href="#">cart</a></span>
 
-          <li>Login</li>
-        </ul>
+              <a href="#"><img src="../assets/cart.png" alt="Cart" /></a>
+            </div>
+
+            <div><a href="#">Login</a></div>
+          </div>
+        </div>
       </nav>
     </header>
     <section class="sectionSlide">
@@ -39,11 +48,11 @@
             funcionalidad
           </p>
           <div class="prices">
-            <div>Precio habitual: $4,420.00 MXN</div>
+            <div>Precio habitual: <del>$4,420.00 MXN</del></div>
             <div>Precio de oferta: $3,770.00 MXN</div>
           </div>
 
-          <button class="compare">compare</button>
+          <button class="prod-btn">Comprar</button>
         </div>
 
         <select id="dropdown">
@@ -52,11 +61,12 @@
       </div>
       <div class="glasses">
         <div class="images">
-          <img src="../assets/glasses .png" alt="Cart" />
+          <img src="../assets/glasses .png" alt="Glasses" />
         </div>
         <div class="sliders">
-          <img src="../assets/arrow-1.png" alt="Cart" />Imagen 1
-          <img src="../assets/arrow-2.png" alt="Cart" />
+          <img src="../assets/arrow-1.png" alt="arrow-right" />
+          <p>Imagen 1</p>
+          <img src="../assets/arrow-2.png" alt="arrow-left" />
         </div>
       </div>
     </section>
@@ -71,21 +81,182 @@
       <div id="products">
         <div class="product">
           <div class="cart">
-            <img src="../assets/cart.png" alt="Carts" />
+            <a href="#"><img src="../assets/cart.png" alt="Carts" /></a>
           </div>
-          <div class="slide">sliders</div>
+          <div class="product-details">
+            <div class="image_detail">
+              <img src="../assets/belt.png" alt="product-image" />
+            </div>
+            <div class="product-name">
+              <p>Cintúron de Cuero Negro</p>
+            </div>
+            <div class="product-price">
+              <p>$3,770.000</p>
+            </div>
+            <div class="product-button">
+              <button class="prod-btn">Comprar</button>
+            </div>
+          </div>
         </div>
         <div class="product">
           <div class="cart">
-            <img src="../assets/cart.png" alt="Carts" />
+            <a href="#"><img src="../assets/cart.png" alt="Carts" /></a>
           </div>
-          <div class="slide">sliders</div>
+          <div class="product-details">
+            <div class="image_detail">
+              <img src="../assets/perfume.png" alt="product-image" />
+            </div>
+            <div class="product-name">
+              <p>Guantes de Cuero Negro</p>
+            </div>
+            <div class="product-price">
+              <p>$3,770.000</p>
+            </div>
+            <div class="product-button">
+              <button class="prod-btn">Comprar</button>
+            </div>
+          </div>
         </div>
         <div class="product">
           <div class="cart">
-            <img src="../assets/cart.png" alt="Carts" />
+            <a href="#"><img src="../assets/cart.png" alt="Carts" /></a>
           </div>
-          <div class="slide">sliders</div>
+          <div class="product-details">
+            <div class="image_detail">
+              <img src="../assets/gloves.png" alt="product-image" />
+            </div>
+            <div class="product-name">
+              <p>Guantes de Cuero Negro</p>
+            </div>
+            <div class="product-price">
+              <p>$3,770.000</p>
+            </div>
+            <div class="product-button">
+              <button class="prod-btn">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <main class="productTwo-container">
+      <div id="products">
+        <div class="product">
+          <div class="cart">
+            <a href="#"><img src="../assets/cart.png" alt="Carts" /></a>
+          </div>
+          <div class="product-details">
+            <div class="image_detail">
+              <img src="../assets/blazer.png" alt="product-image" />
+            </div>
+            <div class="product-name">
+              <p>Saco Negro</p>
+            </div>
+            <div class="product-price">
+              <p>$3,770.000</p>
+            </div>
+            <div class="product-button">
+              <button class="prod-btn">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="cart">
+            <a href="#"><img src="../assets/cart.png" alt="Carts" /></a>
+          </div>
+          <div class="product-details">
+            <div class="image_detail">
+              <img src="../assets/pants.png" alt="product-image" />
+            </div>
+            <div class="product-name">
+              <p>Pantalon Negro</p>
+            </div>
+            <div class="product-price">
+              <p>$3,770.000</p>
+            </div>
+            <div class="product-button">
+              <button class="prod-btn">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="cart">
+            <a href="#"><img src="../assets/cart.png" alt="Carts" /></a>
+          </div>
+          <div class="product-details">
+            <div class="image_detail">
+              <img src="../assets/shoes.png" alt="product-image" />
+            </div>
+            <div class="product-name">
+              <p>Zapatos Negro</p>
+            </div>
+            <div class="product-price">
+              <p>$3,770.000</p>
+            </div>
+            <div class="product-button">
+              <button class="prod-btn">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <main class="productThree-container">
+      <div id="products">
+        <div class="product">
+          <div class="cart">
+            <a href="#"><img src="../assets/cart.png" alt="Carts" /></a>
+          </div>
+          <div class="product-details">
+            <div class="image_detail">
+              <img src="../assets/socks.png" alt="product-image" />
+            </div>
+            <div class="product-name">
+              <p>Calcetines Negro</p>
+            </div>
+            <div class="product-price">
+              <p>$3,770.000</p>
+            </div>
+            <div class="product-button">
+              <button class="prod-btn">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="cart">
+            <a href="#"><img src="../assets/cart.png" alt="Carts" /></a>
+          </div>
+          <div class="product-details">
+            <div class="image_detail">
+              <img src="../assets/raybuns.png" alt="product-image" />
+            </div>
+            <div class="product-name">
+              <p>Lentes Negro</p>
+            </div>
+            <div class="product-price">
+              <p>$3,770.000</p>
+            </div>
+            <div class="product-button">
+              <button class="prod-btn">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="cart">
+            <a href="#"><img src="../assets/cart.png" alt="Carts" /></a>
+          </div>
+          <div class="product-details">
+            <div class="image_detail">
+              <img src="../assets/hats.png" alt="product-image" />
+            </div>
+            <div class="product-name">
+              <p>Sombrero Negro</p>
+            </div>
+            <div class="product-price">
+              <p>$3,770.000</p>
+            </div>
+            <div class="product-button">
+              <button class="prod-btn">Comprar</button>
+            </div>
+          </div>
         </div>
       </div>
     </main>

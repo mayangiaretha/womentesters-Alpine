@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 50px;
+  margin-bottom: 50px;
 }
 
 .glasses {

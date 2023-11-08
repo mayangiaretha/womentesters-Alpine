@@ -8,7 +8,7 @@
   background: #f3f3f3;
 }
 
-/* header */
+/* header container */
 .nav-bar {
   display: flex;
   align-items: center;
@@ -33,6 +33,11 @@ header {
   font-weight: 700;
   justify-content: center;
   text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 .logo img {
