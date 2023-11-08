@@ -1,0 +1,73 @@
+/* Hero container */
+
+.sectionSlide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding-top: 152px;
+}
+
+.kasier {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.glasses {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content {
+  height: 300px;
+  width: 320px;
+  margin-left: 50px;
+  line-height: 26px;
+}
+.content h1 {
+  padding-bottom: 15px;
+}
+.prices {
+  margin-top: 10px;
+}
+button {
+  padding: 10px 52px;
+  border: 1px solid #000;
+  margin-top: 70px;
+  background-color: inherit;
+}
+#dropdown {
+  height: 27px;
+  width: 170px;
+  margin-left: 150px;
+  margin-top: 60px;
+  border: none;
+  font-size: 16px;
+  background-color: inherit;
+}
+
+.images {
+  width: 487px;
+  height: 200px;
+  flex-shrink: 0;
+  margin-top: 40px;
+  margin-right: 63px;
+}
+
+.sliders {
+  height: 24px;
+  width: 162px;
+  margin-top: 60px;
+  align-self: center;
+  align-items: center;
+  color: #000;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
